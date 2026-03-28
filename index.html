@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="GPU 점수 그래프">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="띵판">
+    <meta name="keywords" content="GPU, 점수표">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>GPU 점수 그래프</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- 추후 헤더 추가 -->
+
+    <div class="content">
+        <h1>GPU 점수 그래프</h1>
+        <div class="wrap">
+            <canvas id="mychart" width="1080" height="1716"></canvas>
+        </div>
+        <hr>
+        <div class="description">
+            <div class="info_scription">
+                <p>설명</p>
+                <ul>
+                    <li>해당 그래프는 <a href="https://www.topcpu.net/en/gpu-r/3dmark-time-spy-desktop" target="_blank" id="base">TOPCPU</a>의 데이터를 참고했습니다.</li>
+                    <li>출시 시기를 반영하여 세대를 주관적으로 구분했습니다.</li>
+                    <li>모델명에 마우스를 올려 상세 점수를 확인할 수 있습니다.</li>
+                    <li>주기적으로 업데이트하며 모델 추가 요청은 받지 않습니다.</li>
+                </ul>
+                <p>&nbsp;</p>
+            </div>
+            <div class="recommand_scription">
+                <p>용도별 권장사양</p>
+                <ul>
+                    <li>추후 설명 추가 예정</li>
+                </ul>
+                <p>&nbsp;</p>
+            </div>
+            <div class="note_scription">
+                <p>수정 예정</p>
+                <ul>
+                    <li>그래프 관련 JS 수정</li>
+                    <li>최신 모델 추가</li>
+                </ul>
+                <p>&nbsp;</p>
+            </div>
+            <div class="warning_scription">
+                <p>주의사항</p>
+                <ul>
+                    <li>표기된 성능 수치와 별도로 다른 원인(게임 최적화, VRAM 용량/대역폭)으로 인해 실제 성능은 다를 수 있습니다.</li>
+                    <li>본 자료에 사용된 데이터는 DB복제/크롤링 없이 수동으로 입력했습니다.</li>
+                    <li>캡쳐본 사용시 링크나 닉네임으로 표기해주시면 상업적 이용도 가능합니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 띵판, All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <!-- 주석을 위해 JSON을 .js파일로 관리 -->
+    <script src="index.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
